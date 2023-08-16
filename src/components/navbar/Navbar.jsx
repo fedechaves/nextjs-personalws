@@ -1,6 +1,7 @@
 "use client"
 import Link from 'next/link'
 import React from 'react'
+import styles from './navbar.module.css'
 
 const Navbar = () => {
     const links = [
@@ -36,7 +37,7 @@ const Navbar = () => {
         },
       ];  
   return (
-    <div>
+    <div className={styles.navBar}>
         <Link href="/">Fedecha</Link>
         <div>
           {links.map((link) => (
