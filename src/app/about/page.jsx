@@ -40,7 +40,11 @@ const About = () => {
             Eos sapiente dignissimos est et nobis provident, corporis tenetur autem sint veritatis 
             repellendus quidem optio ea corrupti numquam quo.
             <br />
-            <br />-Creative Illustrations -Dynamic Websites -Fast and Handy Mobile Apps
+            <br />-Creative Illustrations 
+            <br />
+            <br />-Dynamic Websites 
+            <br />
+            <br />-Fast and Handy Mobile Apps
           </p>
           <Button url="/contact" text="contact"/>
         </div>
