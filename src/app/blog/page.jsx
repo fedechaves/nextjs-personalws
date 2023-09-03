@@ -5,6 +5,7 @@ import Image from "next/image";
 
 async function getData() {
   const res = await fetch("http://localhost:3000/api/posts", {
+    //caching refresh of  data
     cache: "no-store",
   });
 
