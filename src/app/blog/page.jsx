@@ -3,6 +3,7 @@ import styles from "./page.module.css";
 import Link from "next/link";
 import Image from "next/image";
 
+//fetching data
 async function getData() {
   const res = await fetch("http://localhost:3000/api/posts", {
     //caching refresh of  data
@@ -18,6 +19,7 @@ async function getData() {
 
 const Blog = async () => {
   const data = await getData();
+  
   return (
     <div className={styles.mainContainer}>
       {data.map((item) => (
