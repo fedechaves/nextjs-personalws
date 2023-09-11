@@ -31,11 +31,7 @@ const Navbar = () => {
           title: "Contact",
           url: "/contact",
         },
-        {
-          id: 6,
-          title: "Dashboard",
-          url: "/dashboard",
-        },
+        
       ];  
   return (
     <header className={styles.container}>
@@ -47,12 +43,7 @@ const Navbar = () => {
                 {link.title}
               </Link>
           ))}
-          <button className={styles.logout} onClick={() => {
-            console.log("logged out")
-          }}
-          >
-            Logout
-          </button>
+          
         </div>
     </header>
 

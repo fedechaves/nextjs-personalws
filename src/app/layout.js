@@ -13,6 +13,13 @@ const roboto = Roboto({
   display: 'swap',
 })
 
+const poppins = Poppins({
+  weight: ['400', '700'],
+  style: ['normal', 'italic'],
+  subsets: ['latin'],
+  display: 'swap',
+})
+
 export const metadata = {
   title: 'Fede Chaves',
   description: 'Software Developer',
@@ -21,7 +28,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={roboto.className}>
+      <body className={poppins.className}>
         <ThemeProvider>
           <AuthProvider>
           <div className='container'>

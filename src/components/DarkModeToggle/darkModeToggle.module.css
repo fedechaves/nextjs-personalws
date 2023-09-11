@@ -1,7 +1,7 @@
 .container{
   width: 42px;
   height: 24px;
-  border: 1.5px solid #53c28b70;
+  border: 1.5px solid #f1802d;
   border-radius: 30px;
   display: flex;
   align-items: center;
@@ -12,13 +12,13 @@
 }
 
 .icon{
-  font-size: 12px;
+  font-size: 11px;
 }
 
 .ball{
-  width: 15px;
-  height: 15px;
-  background-color: #53c28b;
+  width: 16px;
+  height: 16px;
+  background-color: #f1802d;
   border-radius: 50%;
   position: absolute;
 }
