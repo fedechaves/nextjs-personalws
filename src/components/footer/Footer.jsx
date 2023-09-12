@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <div className={styles.container}>
       <div>
-        <h3>Fede Chaves - 2023.</h3>
+        <h5>Fede Chaves - 2023.</h5>
         <span style={{fontSize: "9px", display: "flex", flexDirection:"column"}}>
           <a href="https://www.freepik.com/free-vector/design-inspiration-concept-illustration_10791980.htm#query=illustrations&position=2&from_view=keyword&track=sph">Illustrations by storyset on Freepik</a> 
           <a href="https://www.freepik.com/free-vector/solidarity-concept-illustration_14562369.htm#&position=30&from_view=author">Illustrations by storyset on Freepik</a>
