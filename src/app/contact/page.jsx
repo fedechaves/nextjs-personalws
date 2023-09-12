@@ -3,7 +3,7 @@ import React from "react";
 import styles from "./page.module.css";
 import Image from "next/image";
 import Button from "@/components/Button/Button";
-import ContactImage from 'public/contact.png'
+import ContactImage from 'public/ContactImage.png'
 
 export const metadata = {
   title: "Fede Chaves Contact Information",
