@@ -20,15 +20,15 @@
 
 .textContainer {
     display: flex;
-    gap: 100px;
+    gap: 80px;
 }
 
 .item {
     flex: 1;
-    margin-top: 50px;
+    margin-top: 25px;
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 25px;
 }
 
 .desc{
