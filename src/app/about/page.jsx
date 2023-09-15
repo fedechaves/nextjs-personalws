@@ -43,8 +43,9 @@ const About = () => {
           </p>
         </div>
       </div>
-      <div style={{ display:"grid", placeItems: "center", marginTop: "3rem"}}>
+      <div style={{ display:"flex", alignItems: "center",justifyContent: "center", gap: "1rem", marginTop: "2rem"}}>
         <Button url="/contact" text="Contact me 😃"/>
+        <a className={styles.cv} href="/Federico_Chaves_SWE_2023.pdf" download="Federico_Chaves_CV_2023">Download CV 📄</a>
       </div>
     </div>
   )

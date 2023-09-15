@@ -36,3 +36,20 @@
     font-weight: 300;
     text-align: left;
 }
+
+.cv {
+    padding: 1.25rem 2rem;
+    height: 3.8rem;
+    font-size:medium;
+    cursor: pointer;
+    background-color: #f1802d;
+    border: none;
+    width: max-content;
+    color: white;
+    border-radius: 1rem;
+    font-weight: bold;
+}
+
+.cv:hover {
+    background-color: #c06624;
+  }
