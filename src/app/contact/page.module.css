@@ -50,3 +50,19 @@
     border-radius: 0.75rem;
     z-index: 1;
 }
+
+.button {
+    padding: 1.25rem 2rem;
+    font-size:medium;
+    cursor: pointer;
+    background-color: #f1802d;
+    border: none;
+    width: max-content;
+    color: white;
+    border-radius: 1rem;
+    font-weight: bold;
+}
+
+.button:hover {
+    background-color: #c06624;
+  }

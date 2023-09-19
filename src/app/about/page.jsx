@@ -13,6 +13,7 @@ const About = () => {
           alt="image" 
           fill={true}
           className={styles.img}
+          priority={false}
           />
           <div className={styles.imgText}>
             <h1 className={styles.imgTitle}>About Me</h1>
