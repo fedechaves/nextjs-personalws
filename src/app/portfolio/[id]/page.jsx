@@ -5,9 +5,9 @@ import Image from "next/image";
 import { items } from "./data.js";
 import { notFound } from "next/navigation";
 
-const getData = (cat) => {
-  const data = items[cat];
-
+const getData = (id) => {
+  const data = items.works[id];
+  console.log(data)
   if (data) {
     return data;
   }
@@ -16,28 +16,27 @@ const getData = (cat) => {
 };
 
 const Category = ({ params }) => {
-  const data = getData(params.category);
+  console.log(params)
+  const data = getData(params.id);
+  console.log(data)
   return (
     <div className={styles.container}>
-      <h1 className={styles.catTitle}>{params.category}</h1>
-
-      {data.map((item) => (
-        <div className={styles.item} key={item.id}>
+      <h1 className={styles.catTitle}>{data.title}</h1>
+        <div className={styles.item} key={data.id}>
           <div className={styles.content}>
-            <h1 className={styles.title}>{item.title}</h1>
-            <p className={styles.desc}>{item.desc}</p>
+            <h1 className={styles.title}>{data.title}</h1>
+            <p className={styles.desc}>{data.desc}</p>
             <Button text="See More" url="#" />
           </div>
           <div className={styles.imgContainer}>
             <Image
               className={styles.img}
               fill={true}
-              src={item.image}
+              src={data.image}
               alt=""
             />
           </div>
         </div>
-      ))}
     </div>
   );
 };

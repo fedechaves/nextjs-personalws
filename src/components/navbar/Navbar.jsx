@@ -35,7 +35,7 @@ const Navbar = () => {
       ];  
   return (
     <header className={styles.container}>
-        <Link href="/" className={styles.logo}>Fedecha</Link>
+        <Link href="/" className={styles.logo}>Home</Link>
         <div className={styles.links}>
           <DarkModeToggle/>
           {links.map((link) => (

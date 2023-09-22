@@ -4,6 +4,7 @@ import Button from "@/components/Button/Button";
 import Image from "next/image";
 import { items } from "./data.js";
 import { notFound } from "next/navigation";
+import Link from "next/link";
 
 const getData = (cat) => {
   const data = items;
@@ -15,7 +16,7 @@ const getData = (cat) => {
   return notFound();
 };
 
-const Category = () => {
+const Category = async () => {
   const data = getData();
   return (
     <div className={styles.container}>
@@ -26,7 +27,7 @@ const Category = () => {
           <div className={styles.content}>
             <h1 className={styles.title}>{item.title}</h1>
             <p className={styles.desc}>{item.desc}</p>
-            <Button text="See More" url="#" />
+            <Link className={styles.btn_link} href={`/portfolio/${item.id}`}>See more</Link>
           </div>
           <div className={styles.imgContainer}>
             <Image
